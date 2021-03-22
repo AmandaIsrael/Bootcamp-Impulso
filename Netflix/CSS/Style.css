@@ -1,0 +1,106 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.Wrapper {
+    margin-left: 30px;
+}
+
+header .Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+header .Logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme principal */
+
+.Main-Movie .Wrapper {
+    width: 70%;
+}
+
+.Main-Movie {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/Resource/TheOffice.jpg');
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Main-Movie .Title{
+    margin-top: 15%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.Main-Movie .Sinopse {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 10px 10px; /* (top, down) (left, right) */
+    margin-right: 15px;
+    font-size: 16px;
+    
+    cursor: pointer; /* usuário passa o mouse e identifica como botão */
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i {
+    margin-right: 5px;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.Owl-Carousel {
+    margin-top: 5px;
+}
